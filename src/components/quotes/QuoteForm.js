@@ -1,7 +1,7 @@
 import { useRef } from "react";
 
-import Card from "../ui/Card";
-import LoadingSpinner from "../ui/LoadingSpinner";
+import Card from "../UI/Card";
+import LoadingSpinner from "../UI/LoadingSpinner";
 import classes from "./QuoteForm.module.css";
 
 function QuoteForm(props) {
@@ -13,8 +13,6 @@ function QuoteForm(props) {
 
     const enteredAuthor = authorInputRef.current.value;
     const enteredText = textInputRef.current.value;
-
-    // optional: Could validate here
 
     props.onAddQuote({ author: enteredAuthor, text: enteredText });
   }
